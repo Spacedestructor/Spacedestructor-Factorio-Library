@@ -1,0 +1,9 @@
+{
+	"name": "Spacedestructor-Library",
+	"version": "1.0.0",
+	"title": "Spacedestructor Library",
+	"author": "Spacedestructor",
+	"description": "A Library used by my Mods.",
+	"factorio_version": "2.0",
+	"dependencies": ["base >= 2.0"]
+}

@@ -1,0 +1,21 @@
+{
+	"Lua.diagnostics.globals": [
+		"game",
+		"script",
+		"serpent",
+		"table_size",
+		"data",
+		"settings",
+		"log",
+		"defines",
+		"Location",
+		"storage",
+		"remote",
+		"helpers",
+		"prototypes"
+	],
+	"Lua.diagnostics.disable": [
+		"undefined-doc-param",
+		"undefined-doc-name"
+	]
+}
