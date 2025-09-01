@@ -26,7 +26,17 @@ Rich Text Test [img=item.iron-plate][img=quantity-time][img=utility/played_green
 
 --For Debugging Purposes with GVV
 
-if script.active_mods["gvv"] then require("__gvv__.gvv")() end
+Debug = false
+if script.active_mods["gvv"] then require("__gvv__.gvv")(); Debug = true end
+if script.active_mods["0-event-trace"] then Debug = true end
+if __DebugAdapter ~= nil then Debug = true end
+log('"Debug Mode: "' .. tostring(Debug))
+
+PrintSettings = { color = { r = 255, g = 255, b = 255, a = 255 }, sound = defines.print_sound.never, skip = defines.print_skip.never, game_state = false }
+
+--Our Starting Items for Debugging purposes.
+--StartingItems = require("scripts.Level_1.Debug")
+--script.on_event(defines.events.on_player_created,function(Event) StartingItems(Event, {}) end)
 
 --Factorio native Libraries
 

@@ -11,7 +11,7 @@ Will Error if any Parameter is Invalid.
 ---@param Reference string|number
 ---@return number|string|nil
 ---@nodiscard
-function DefinesLookup(Defines, Reference)
+local function DefinesLookup(Defines, Reference)
 	if Defines == "events" then
 		if type(Reference) == "string" then
 			local Dictionary = remote.call("SL", "getGlobals", "EventDictionary")
@@ -44,3 +44,4 @@ function DefinesLookup(Defines, Reference)
 		error("Invalid Parameter!", 2)
 	end
 end
+return DefinesLookup

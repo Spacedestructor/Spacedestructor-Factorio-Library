@@ -12,7 +12,8 @@
 		"storage",
 		"remote",
 		"helpers",
-		"prototypes"
+		"prototypes",
+		"__DebugAdapter"
 	],
 	"Lua.diagnostics.disable": [
 		"undefined-doc-param",
